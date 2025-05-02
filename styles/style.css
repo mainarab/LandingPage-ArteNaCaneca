@@ -84,7 +84,7 @@ h1 {
 }
 
 /* alinhamento*/
-.mensagem,.pedido,.ContainerIcones,.mensagem{
+.mensagem,.pedido,.ContainerIcones,.mensagem, .variedades, .carroselCanecas{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,7 +97,7 @@ h1 {
     
 }
 .mensagem>div{
-margin-bottom: 90px;
+margin-bottom: 40px;
 }
 
 .mensagem>div>p{
@@ -132,11 +132,11 @@ h2 {
 
 .pedido>article{
     display: flex;
-    justify-content: space-between;
 }
 
 .pedido>.botao{
     margin-top: 22px;
+    margin-bottom: 40px;
 }
 .ContainerIcones>img{
     margin-bottom: 45px;
@@ -151,7 +151,7 @@ h2 {
     color: #9B51E0;
     text-align: center;
 }
-.roxo:hover{
+.ContainerIcones>.roxo:hover{
     color: #56CCF2;
 }
 .ContainerIcones>p{
@@ -160,3 +160,63 @@ h2 {
 }
 
 /* sessão 3 */
+#ceramica, #vidro, #metal, #tematica, #personalizada{
+    width: 26px;
+    height: 26px;
+    background-color: #9b51e050;
+    border-radius: 999px;
+    border: none;
+    margin: 5px;
+}
+#ceramica{
+    background-color: #9B51E0;
+}
+.carroselCanecas{
+    background-color: #fff;
+    padding: 20px;
+    border: #9B51E0 1px solid;
+    border-radius: 30px;
+    margin-right: 124px;
+}
+.carroselCanecas>h4{
+    font-size: 2rem;
+}
+.carroselCanecas>p{
+    font-size: 1.3rem;
+}
+#preco, .carroselCanecas>h4, .observacoes>h3{
+    font-weight: 600;
+}
+
+.variedades>div{
+  display: flex;
+  align-items: center;
+
+}
+
+.observacoes>h3{
+    font-size: 3rem;
+    margin-bottom: 35px;
+}
+.observacoes>p{
+    width: 596px;
+    height: 78px;
+    font-size: 2rem ;
+    text-align: center;
+    margin-top: 30px;
+    border-bottom: #9B51E0 1px solid;
+}
+.observacoes>p:hover{
+    color: #FFC300;
+}
+
+.variedades>.botao{
+    margin: 89px 0px 55px 0px;
+}
+.variedades>p{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Sessão 4 */
