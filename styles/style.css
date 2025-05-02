@@ -38,7 +38,6 @@ li>a:hover {
 
 li>a.botao {
     font-size: 1.5rem;
-    font-weight: 600;
     color: #FEFEFE;
 }
 
@@ -49,6 +48,7 @@ li>a.botao {
     text-decoration: none;
     border-radius: 999px;
     font-size: 2rem;
+    font-weight: 600;
 }
 
 .botao:hover {
@@ -79,19 +79,23 @@ h1 {
     margin-bottom: 20px;
 }
 
-.mensagem{
+/* alinhamento*/
+.mensagem,.pedido,.ContainerIcones,.mensagem{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.mensagem{
     margin:70px;
     margin-right: 115px;
     
-
 }
 .mensagem>div{
 margin-bottom: 90px;
 }
+
 .mensagem>div>p{
     text-align: center;
     font-size: 2rem;
@@ -108,3 +112,49 @@ h2 {
     font-weight: 400;
     font-style: normal;
 }
+
+.pedido{
+    margin: 0px 120px;
+}
+
+.ContainerIcones{
+    width: 300px;
+    margin: 0px 46px;
+    
+}
+
+
+.pedido>h2{
+    margin-bottom: 42px;
+}
+
+.pedido>article{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pedido>.botao{
+    margin-top: 22px;
+}
+.ContainerIcones>img{
+    margin-bottom: 45px;
+}
+.textoRoxo{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #9B51E0;
+    text-align: center;
+}
+.roxo{
+    color: #9B51E0;
+    text-align: center;
+}
+.roxo:hover{
+    color: #56CCF2;
+}
+.ContainerIcones>p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* sessão 3 */
