@@ -9,7 +9,9 @@
 }
 
 /* Margem lateral*/
-.pedido, .apresentacao, .variedades{
+.pedido,
+.apresentacao,
+.variedades {
     margin: 0px 120px;
 }
 
@@ -74,39 +76,46 @@ h1 {
 .inicio {
     background-color: #9b51e010;
 }
-.apresentacao{
+
+.apresentacao {
     display: flex;
     align-items: center;
 }
 
-.apresentacao>h1{
+.apresentacao>h1 {
     margin-bottom: 20px;
 }
 
 /* alinhamento*/
-.mensagem,.pedido,.ContainerIcones,.mensagem, .variedades, .carroselCanecas{
+.mensagem,
+.pedido,
+.ContainerIcones,
+.mensagem,
+.variedades,
+.carroselCanecas {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.mensagem{
-    margin:70px;
+.mensagem {
+    margin: 70px;
     margin-right: 115px;
-    
-}
-.mensagem>div{
-margin-bottom: 40px;
+
 }
 
-.mensagem>div>p{
+.mensagem>div {
+    margin-bottom: 40px;
+}
+
+.mensagem>div>p {
     text-align: center;
     font-size: 2rem;
 }
 
-video{
-    width:492px; 
+video {
+    width: 492px;
 }
 
 /* Sessão 2 */
@@ -118,49 +127,58 @@ h2 {
 }
 
 
-.ContainerIcones{
+.ContainerIcones {
     width: 300px;
     margin: 0px 46px;
-    
+
 }
 
 
 
-.pedido>h2{
+.pedido>h2 {
     margin-bottom: 42px;
 }
 
-.pedido>article{
+.pedido>article {
     display: flex;
 }
 
-.pedido>.botao{
+.pedido>.botao {
     margin-top: 22px;
     margin-bottom: 40px;
 }
-.ContainerIcones>img{
+
+.ContainerIcones>img {
     margin-bottom: 45px;
 }
-.textoRoxo{
+
+.textoRoxo {
     font-size: 2rem;
     font-weight: 600;
     color: #9B51E0;
     text-align: center;
 }
-.roxo{
+
+.roxo {
     color: #9B51E0;
     text-align: center;
 }
-.ContainerIcones>.roxo:hover{
+
+.ContainerIcones>.roxo:hover {
     color: #56CCF2;
 }
-.ContainerIcones>p{
+
+.ContainerIcones>p {
     font-size: 1.5rem;
     text-align: center;
 }
 
 /* sessão 3 */
-#ceramica, #vidro, #metal, #tematica, #personalizada{
+#ceramica,
+#vidro,
+#metal,
+#tematica,
+#personalizada {
     width: 26px;
     height: 26px;
     background-color: #9b51e050;
@@ -168,55 +186,159 @@ h2 {
     border: none;
     margin: 5px;
 }
-#ceramica{
+
+#ceramica {
     background-color: #9B51E0;
 }
-.carroselCanecas{
+
+.carroselCanecas {
     background-color: #fff;
     padding: 20px;
     border: #9B51E0 1px solid;
     border-radius: 30px;
     margin-right: 124px;
 }
-.carroselCanecas>h4{
+
+.carroselCanecas>h4 {
     font-size: 2rem;
 }
-.carroselCanecas>p{
+
+.carroselCanecas>p {
     font-size: 1.3rem;
 }
-#preco, .carroselCanecas>h4, .observacoes>h3{
+
+#preco,
+.carroselCanecas>h4,
+.observacoes>h3 {
     font-weight: 600;
 }
 
-.variedades>div{
-  display: flex;
-  align-items: center;
+.variedades>div {
+    display: flex;
+    align-items: center;
 
 }
 
-.observacoes>h3{
+.observacoes>h3 {
     font-size: 3rem;
     margin-bottom: 35px;
 }
-.observacoes>p{
+
+.observacoes>p {
     width: 596px;
     height: 78px;
-    font-size: 2rem ;
+    font-size: 2rem;
     text-align: center;
     margin-top: 30px;
     border-bottom: #9B51E0 1px solid;
 }
-.observacoes>p:hover{
+
+.observacoes>p:hover {
     color: #FFC300;
 }
 
-.variedades>.botao{
+.variedades>.botao {
     margin: 89px 0px 55px 0px;
 }
-.variedades>p{
+
+.variedades>p {
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 40px;
 }
 
-/* Sessão 4 */
+/* Sessão 4 (Pode dar problema na hora do JavaScript) */
+
+.prazo {
+    background-color: #ffc40020;
+
+}
+
+.prazo>article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    overflow: hidden;
+    
+    
+}
+
+.prazo>article>h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.prazo>article>p {
+    text-align: center;
+    width: 1011px;
+    font-size: 1.5rem;
+    margin: 50px 0px;
+}
+
+.containerCarrossel {
+    display: flex;
+    justify-content: flex-start;
+    gap: 60px;
+    position: relative;
+    right: calc(-1 * 120px);
+    overflow: hidden;
+    width: 100vw;
+
+    /* Faz uma barrinha pra rolar lateral */
+    /* overflow-x: auto;
+    scroll-snap-type: x mandatory; */
+
+}
+
+
+#CardCeramica,
+#CardVidro, #CardMetal, #CardPersonalizado, #CardTematica {
+    background-color: #FEFEFE;
+    width: 773px;
+    height: 515px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 21px 25px;
+    flex: 0 0 auto;
+
+    /* Faz uma barrinha pra rolar lateral */
+    /* scroll-snap-align: start; */
+
+}
+
+#CardCeramica>img,
+#CardVidro>img,
+#CardMetal>img,
+#CardPersonalizado>img,
+ #CardTematica {
+    width: 237px;
+    margin-right: 45px;
+
+}
+
+#CardCeramica>div>h4,
+#CardVidro>div>h4,
+#CardMetal>div>h4,
+#CardPersonalizado>div>h4,
+ #CardTematica>div>h4 {
+    font-size: 4rem;
+    font-family: "Coiny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#CardCeramica>div>p,
+#CardVidro>div>p,
+#CardMetal>div>p,
+#CardPersonalizado>div>p,
+ #CardTematica>div>p {
+    font-size: 2rem;
+
+}
+
+.textoForte {
+    font-weight: 600;
+
+}
