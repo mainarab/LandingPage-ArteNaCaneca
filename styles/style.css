@@ -9,9 +9,7 @@
 }
 
 /* Margem lateral*/
-.pedido,
-.apresentacao,
-.variedades {
+ .margemLateral {
     margin: 0px 120px;
 }
 
@@ -87,12 +85,7 @@ h1 {
 }
 
 /* alinhamento*/
-.mensagem,
-.pedido,
-.ContainerIcones,
-.mensagem,
-.variedades,
-.carroselCanecas {
+ .alinhamento {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -255,10 +248,6 @@ h2 {
 }
 
 .prazo>article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   
     overflow: hidden;
     
     
@@ -342,3 +331,41 @@ h2 {
     font-weight: 600;
 
 }
+
+/* Sessão 5 */
+.Perguntas{
+    display: flex;
+    
+}
+.Perguntas>h2, .Perguntas>.cardPerguntas>div, .Perguntas>p{
+    text-align: center;
+}
+.Perguntas>h2{
+    margin-bottom: 105px;
+}
+.Perguntas>p{
+    margin: 183px 0px 20px 0px;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.cardPerguntas{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.Perguntas>.cardPerguntas>div{
+    border-bottom: #242424 1px solid;
+    width: 800px;
+
+    padding-bottom: 50px;
+
+}
+.Perguntas>.cardPerguntas>div>p{
+    background-color: #56cbf220;
+    font-size: 2rem;
+    text-align: left;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+/* Sessçao 6 */
