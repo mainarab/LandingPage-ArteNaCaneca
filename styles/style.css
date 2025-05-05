@@ -7,7 +7,11 @@
     font-style: normal;
 
 }
+/* Texto negrito */
+.textoForte {
+    font-weight: 600;
 
+}
 /* Margem lateral*/
  .margemLateral {
     margin: 0px 120px;
@@ -200,12 +204,6 @@ h2 {
     font-size: 1.3rem;
 }
 
-#preco,
-.carroselCanecas>h4,
-.observacoes>h3 {
-    font-weight: 600;
-}
-
 .variedades>div {
     display: flex;
     align-items: center;
@@ -327,10 +325,7 @@ h2 {
 
 }
 
-.textoForte {
-    font-weight: 600;
 
-}
 
 /* Sessão 5 */
 .Perguntas{
@@ -345,7 +340,6 @@ h2 {
 }
 .Perguntas>p{
     margin: 183px 0px 20px 0px;
-    font-weight: 600;
     font-size: 2rem;
 }
 .cardPerguntas{
@@ -356,7 +350,6 @@ h2 {
 .Perguntas>.cardPerguntas>div{
     border-bottom: #242424 1px solid;
     width: 800px;
-
     padding-bottom: 50px;
 
 }
