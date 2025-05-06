@@ -14,8 +14,9 @@
 
 <body>
     <header>
+        <section>
+        <img src="imagens/LogoPrincipal.svg" alt="Caneca com pincel dentro e o nome Arte na Caneca em baixo">
         <nav>
-            <img src="imagens/LogoPrincipal.svg" alt="Caneca com pincel dentro e o nome Arte na Caneca em baixo">
             <ul>
                 <li><a href="#">Canecas</a></li>
                 <li><a href="#">Prazo</a></li>
@@ -24,16 +25,17 @@
                 <li><a class="botao" href="#">Entre em contato</a></li>
             </ul>
         </nav>
+    </section>
     </header>
 
     <!-- Sessão 1 -->
     <main>
-        <section class="inicio">
+        <section id="inicio">
             <article class="apresentacao margemLateral">
                 <div class="mensagem alinhamento">
                     <div>
                         <h1>Transforme momentos em arte</h1>
-                        <p>Canecas personalizadas que refletem quem você é, criadas para marcar sua história com
+                        <p class="textoCentro">Canecas personalizadas que refletem quem você é, criadas para marcar sua história com
                             exclusividade e
                             estilo!</p>
                     </div>
@@ -49,23 +51,23 @@
         </section>
 
         <!-- Sessão 2 -->
-        <section class="pedido alinhamento margemLateral">
+        <section id="pedido" class="alinhamento margemLateral">
             <h2>Como fazer seu pedido</h1>
                 <article>
                     <div class="ContainerIcones alinhamento">
                         <img src="imagens/iconePincel.svg" alt="pincel com uma estrela de quatro pontas ao lado">
-                        <h4 class="textoRoxo">Sua arte</h4>
+                        <h4 class="textoRoxo textoCentro textoForte">Sua arte</h4>
                         <p>Envie sua arte pronta em alta qualidade ou faça com um de nossos designers</p>
                     </div>
                     <div class="ContainerIcones alinhamento">
                         <img src="imagens/iconeCaneca.svg" alt="traçado de uma caneca">
-                        <h4 class="textoRoxo">Caneca</h4>
+                        <h4 class="textoRoxo textoCentro textoForte">Caneca</h4>
                         <p>Escolha o modelo de caneca que mais se adequa ao seu gosto</p> <br>
-                        <p class="roxo">Verifique os modelos</p>
+                        <p class="roxo textoCentro">Verifique os modelos</p>
                     </div>
                     <div class="ContainerIcones alinhamento">
                         <img src="imagens/iconeEstrela.svg" alt="estrela de quatro pontas">
-                        <h4 class="textoRoxo">Faça seu pedido</h4>
+                        <h4 class="textoRoxo textoCentro textoForte">Faça seu pedido</h4>
                         <p>Oferecemos atendimento personalizado e um cuidado especial com cada etapa, desde o design até
                             a
                             entrega.</p>
@@ -76,8 +78,8 @@
         </section>
 
         <!-- Sessão 3 -->
-        <section class="inicio">
-            <article class="variedades alinhamento margemLateral">
+        <section id="variedades">
+            <article id="SessaoVariedades" class="alinhamento margemLateral">
                 <h2>Variedade de canecas</h2>
                 <div>
                     <div class="carroselCanecas alinhamento">
@@ -96,23 +98,23 @@
                         <p id="precoDois" class="textoForte">R$ 20,00</p>
                     </div>
 
-                    <div class="observacoes textoForte">
-                        <h3 class="roxo">Observações</h3>
-                        <p>Caneca de cerâmica</p>
-                        <p>Caneca de vidro</p>
-                        <p>Caneca de metal</p>
-                        <p>Kit personalizado</p>
-                        <p>Coleções temáticas</p>
+                    <div class="observacoes">
+                        <h3 class="roxo textoForte textoCentro">Observações</h3>
+                        <p class="textoCentro">Caneca de cerâmica</p>
+                        <p class="textoCentro">Caneca de vidro</p>
+                        <p class="textoCentro">Caneca de metal</p>
+                        <p class="textoCentro">Kit personalizado</p>
+                        <p class="textoCentro">Coleções temáticas</p>
                     </div>
                 </div>
                 <a class="botao" href="#">Confira todo o catálogo </a>
-                <p>Aceitamos PIX, cartão de crédito, boleto bancário e transferência bancária. Para pedidos maiores,
+                <p class="textoCentro">Aceitamos PIX, cartão de crédito, boleto bancário e transferência bancária. Para pedidos maiores,
                     oferecemos parcelamento.</p>
             </article>
         </section>
 
         <!-- Sessão 4 -->
-        <section class="prazo">
+        <section id="prazo">
             <article class="alinhamento">
                 <h2>Prazo de produção</h2>
                 <div class="containerCarrossel">
@@ -180,7 +182,7 @@
 
         <!-- Sessçao 5 -->
         <section Id="sessaoPerguntas">
-            <article class="Perguntas alinhamento margemLateral">
+            <article id="Perguntas" class="alinhamento margemLateral">
                 <h2>Perguntas frequentes</h2>
                 <div class="cardPerguntas">
                     <div>
@@ -215,130 +217,159 @@
                 <div class="alinhamento">
                     <h3 class="textoForte">EXCELENTE</h3>
                     <img src="imagens/imagensAvaliações/cincoEstrelas.svg" alt="5 estrelas amarelas">
-                        <p>Com base em 27 avaliações  </p>
-                        
+                    <p>Com base em 27 avaliações </p>
+
                     <img src="imagens/imagensAvaliações/logoGoogle.png"
                         alt="logo do google (escrito google em colorido)">
                 </div>
 
                 <div id="carrosselAvaliacoes">
-                    <button class="passaLado"> < </button>
-                    <!-- Rafael -->
-                    <div class="cardAvaliacoes">
-                        <div class="imagens">
-                            <img src="imagens/imagensAvaliações/FotoRafael.png" alt="Circulo com R no meio">
-                            <div>
-                                <p class="Nome textoForte">Rafael Silva</p>
-                                <p class="Data">24/11/2024</p>
-                            </div>
-                            <div>
-                                <img class="ImagemGoogle" src="imagens/imagensAvaliações/googleSimbolo.png"
-                                    alt="simbolo de G colorido">
+                    <button class="passaLado">
+                        < </button>
+                            <!-- Rafael -->
+                            <div class="cardAvaliacoes">
+                                <div class="imagens">
+                                    <img src="imagens/imagensAvaliações/FotoRafael.png" alt="Circulo com R no meio">
+                                    <div>
+                                        <p class="Nome textoForte">Rafael Silva</p>
+                                        <p class="Data">24/11/2024</p>
+                                    </div>
+                                    <div>
+                                        <img class="ImagemGoogle" src="imagens/imagensAvaliações/googleSimbolo.png"
+                                            alt="simbolo de G colorido">
+                                    </div>
+
+                                </div>
+                                <div class="feedback">
+                                    <div><img class="Estrelas" src="imagens/imagensAvaliações/cincoEstrelas.svg"
+                                            alt="5 estrelas amarelas">
+                                        <img src="imagens/imagensAvaliações/simboloVerificado.png"
+                                            alt="estrela com um v dentro">
+                                    </div>
+
+                                    <p>Adorei a qualidade da impressão! A caneca ficou exatamente como eu imaginei, e o
+                                        atendimento foi super atencioso.</p>
+                                </div>
                             </div>
 
-                        </div>
-                        <div class="feedback">
-                            <div><img class="Estrelas" src="imagens/imagensAvaliações/cincoEstrelas.svg"
-                                    alt="5 estrelas amarelas">
-                                <img src="imagens/imagensAvaliações/simboloVerificado.png"
-                                    alt="estrela com um v dentro">
+                            <!-- Mariana -->
+                            <div class="cardAvaliacoes">
+                                <div class="imagens">
+                                    <img src="imagens/imagensAvaliações/FotoMariana.png"
+                                        alt="uma mulher loira com braços cruzados, camiseta branca e fundo laranja ">
+                                    <div>
+                                        <p class="Nome textoForte">Mariana Santos</p>
+                                        <p class="Data">20/10/2024</p>
+                                    </div>
+                                    <div>
+                                        <img class="ImagemGoogle" src="imagens/imagensAvaliações/googleSimbolo.png"
+                                            alt="simbolo de G colorido">
+                                    </div>
+
+                                </div>
+                                <div class="feedback">
+                                    <div>
+                                        <img class="Estrelas" src="imagens/imagensAvaliações/cincoEstrelas.svg"
+                                            alt="5 estrelas amarelas">
+                                        <img src="imagens/imagensAvaliações/simboloVerificado.png"
+                                            alt="estrela com um v dentro">
+                                    </div>
+                                    <p>O prazo de entrega foi rápido, e a caneca chegou perfeita. Já estou planejando
+                                        pedir
+                                        outra para a coleção.</p>
+                                </div>
                             </div>
 
-                            <p>Adorei a qualidade da impressão! A caneca ficou exatamente como eu imaginei, e o
-                                atendimento foi super atencioso.</p>
-                        </div>
-                    </div>
+                            <!-- Ana -->
+                            <div class="cardAvaliacoes">
+                                <div class="imagens">
+                                    <img src="imagens/imagensAvaliações/FotoAna.png"
+                                        alt="uma mulher loira com braços cruzados, camiseta branca e fundo laranja ">
+                                    <div>
+                                        <p class="Nome textoForte">Ana Silva</p>
+                                        <p class="Data">15/10/2024</p>
+                                    </div>
+                                    <div>
+                                        <img class="ImagemGoogle" src="imagens/imagensAvaliações/googleSimbolo.png"
+                                            alt="simbolo de G colorido">
+                                    </div>
 
-                    <!-- Mariana -->
-                    <div class="cardAvaliacoes">
-                        <div class="imagens">
-                            <img src="imagens/imagensAvaliações/FotoMariana.png"
-                                alt="uma mulher loira com braços cruzados, camiseta branca e fundo laranja ">
-                            <div>
-                                <p class="Nome textoForte">Mariana Santos</p>
-                                <p class="Data">20/10/2024</p>
-                            </div>
-                            <div>
-                                <img class="ImagemGoogle" src="imagens/imagensAvaliações/googleSimbolo.png"
-                                    alt="simbolo de G colorido">
-                            </div>
+                                </div>
 
-                        </div>
-                        <div class="feedback">
-                            <div>
-                                <img class="Estrelas" src="imagens/imagensAvaliações/cincoEstrelas.svg"
-                                    alt="5 estrelas amarelas">
-                                <img src="imagens/imagensAvaliações/simboloVerificado.png"
-                                    alt="estrela com um v dentro">
+                                <div class="feedback">
+                                    <div><img class="Estrelas" src="imagens/imagensAvaliações/cincoEstrelas.svg"
+                                            alt="5 estrelas amarelas">
+                                        <img src="imagens/imagensAvaliações/simboloVerificado.png"
+                                            alt="estrela com um v dentro">
+                                    </div>
+                                    <p>Minha caneca de vidro personalizada ficou linda! A gravação a laser deu um toque
+                                        super
+                                        elegante. Com certeza comprarei de novo.</p>
+                                </div>
                             </div>
-                            <p>O prazo de entrega foi rápido, e a caneca chegou perfeita. Já estou planejando pedir
-                                outra para a coleção.</p>
-                        </div>
-                    </div>
-
-                    <!-- Ana -->
-                    <div class="cardAvaliacoes">
-                        <div class="imagens">
-                            <img src="imagens/imagensAvaliações/FotoAna.png"
-                                alt="uma mulher loira com braços cruzados, camiseta branca e fundo laranja ">
-                            <div>
-                                <p class="Nome textoForte">Ana Silva</p>
-                                <p class="Data">15/10/2024</p>
-                            </div>
-                            <div>
-                                <img class="ImagemGoogle" src="imagens/imagensAvaliações/googleSimbolo.png"
-                                    alt="simbolo de G colorido">
-                            </div>
-
-                        </div>
-
-                        <div class="feedback">
-                            <div><img class="Estrelas" src="imagens/imagensAvaliações/cincoEstrelas.svg"
-                                    alt="5 estrelas amarelas">
-                                <img src="imagens/imagensAvaliações/simboloVerificado.png"
-                                    alt="estrela com um v dentro">
-                            </div>
-                            <p>Minha caneca de vidro personalizada ficou linda! A gravação a laser deu um toque super
-                                elegante. Com certeza comprarei de novo.</p>
-                        </div>
-                    </div>
-                    <button class="passaLado">></button>
+                            <button class="passaLado"> > </button>
                 </div>
+
+
             </article>
         </section>
 
     </main>
 
+
+
     <footer>
 
-        <section>
-            <h4>Contato</h4>
-            <div>
-                <img src="" alt="icone whatsApp">
-                <p>+55 (11) 91234-5678</p>
-                <img src="" alt="icone carta">
-                <p>contato@artenacaneca.com.br</p>
-                <img src="" alt="icone instagram">
-                <p>@instagramficticio</p>
-            </div>
-        </section>
+        <section id="rodape">
+            <article class=" informacoes margemLateral">
 
-        <section>
-            <h4>Formas de pagamento</h4>
-            <img src="" alt="Logo Mastercard">
-            <img src="" alt="Logo Pix">
-            <img src="" alt="Logo Visa">
-            <img src="" alt="Logo Elo">
-            <img src="" alt="Logo Boleto">
-        </section>
+                <div class="alinhamento" id="contato">
+                    <h4 class="textoCentro">Contato</h4>
+                    <div>
+                        <div class="icones">
+                            <img src="imagens/imagensFooter/WhatsApp.svg" alt="icone whatsApp">
+                            <p>+55 (11) 91234-5678</p>
+                        </div>
 
-        <section>
-            <h4>Selos de segurança</h4>
-            <img src="" alt="selo avaliações verificadas">
-            <img src="" alt="selo Google site seguro">
-        </section>
+                        <div class="icones">
+                            <img src="imagens/imagensFooter/email.svg" alt="icone carta">
+                            <p>contato@artenacaneca.com.br</p>
+                        </div>
 
-        <p>Copyright Arte na caneca | 2024 © Todos os direitos reservados</p>
+                        <div class="icones">
+                            <img src="imagens/imagensFooter/Instagram.svg" alt="icone instagram">
+                            <p>@instagramficticio</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div id="pagamento" class="alinhamento">
+                    <h4 class="textoCentro">Formas de pagamento</h4>
+                    <div class="imagensPagamento">
+                        <img src="imagens/imagensFooter/LogoMastercard.png" alt="Logo Mastercard">
+                        <img src="imagens/imagensFooter/LogoPix.png" alt="Logo Pix">
+                        <img src="imagens/imagensFooter/LogoVisa.png" alt="Logo Visa">
+                        <img src="imagens/imagensFooter/LogoElo.png" alt="Logo Elo">
+                        <img src="imagens/imagensFooter/LogoBoleto.png" alt="Logo Boleto">
+                    </div>
+                </div>
+
+
+                <div id="selos">
+                    <h4 class="textoCentro">Selos de segurança</h4>
+                    <div class="alinhamento">
+                        <img src="imagens/imagensFooter/SeloGoogleAvaliacoes.png" alt="selo avaliações verificadas">
+                        <img src="imagens/imagensFooter/SeloGoogleSeguro.png" alt="selo Google site seguro">
+                    </div>
+
+                </div>
+
+            </article>
+        </section>
+        <p id="copyright">Copyright Arte na caneca | 2024 © Todos os direitos reservados</p>
     </footer>
 
 </body>

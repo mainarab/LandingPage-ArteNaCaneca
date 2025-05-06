@@ -2,36 +2,74 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    /* Fonte */
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
 
 }
+
+/* alinhamento*/
+.alinhamento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Texto negrito */
 .textoForte {
     font-weight: 600;
 
 }
+
 /* Margem lateral*/
- .margemLateral {
+.margemLateral {
     margin: 0px 120px;
 }
 
-/* Cabeçalho */
+/* Texto centralizado */
+.textoCentro {
+    text-align: center;
+}
 
+/* Botões */
+.botao {
+    padding: 10px 30px;
+    background-color: #9B51E0;
+    color: #FEFEFE;
+    text-decoration: none;
+    border-radius: 999px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.botao:hover {
+    background-color: #56CCF2;
+}
+
+
+/* Cabeçalho */
 header {
     background-color: #FEFEFE;
     border-bottom: 1px solid #9B51E0;
-
 }
 
+header>section,
 nav,
 ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    list-style-type: none;
+}
+
+header>section {
     margin: 0px 120px;
+}
+
+nav>ul {
+    list-style-type: none;
 }
 
 li>a {
@@ -50,22 +88,8 @@ li>a.botao {
     color: #FEFEFE;
 }
 
-.botao {
-    padding: 10px 30px;
-    background-color: #9B51E0;
-    color: #FEFEFE;
-    text-decoration: none;
-    border-radius: 999px;
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-.botao:hover {
-    background-color: #56CCF2;
-}
 
 /* Seção 1 */
-
 h1 {
     font-size: 3.5rem;
     font-family: "Coiny", system-ui;
@@ -74,8 +98,7 @@ h1 {
     text-align: center;
 }
 
-
-.inicio {
+#inicio, #variedades {
     background-color: #9b51e010;
 }
 
@@ -88,13 +111,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* alinhamento*/
- .alinhamento {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 .mensagem {
     margin: 70px;
@@ -107,7 +123,6 @@ h1 {
 }
 
 .mensagem>div>p {
-    text-align: center;
     font-size: 2rem;
 }
 
@@ -115,7 +130,8 @@ video {
     width: 492px;
 }
 
-/* Sessão 2 */
+
+/* Sessão 2- Como fazer seu pedido */
 h2 {
     font-size: 4rem;
     font-family: "Coiny", system-ui;
@@ -123,24 +139,21 @@ h2 {
     font-style: normal;
 }
 
-
 .ContainerIcones {
     width: 300px;
     margin: 0px 46px;
 
 }
 
-
-
-.pedido>h2 {
+#pedido>h2 {
     margin-bottom: 42px;
 }
 
-.pedido>article {
+#pedido>article {
     display: flex;
 }
 
-.pedido>.botao {
+#pedido>.botao {
     margin-top: 22px;
     margin-bottom: 40px;
 }
@@ -151,14 +164,12 @@ h2 {
 
 .textoRoxo {
     font-size: 2rem;
-    font-weight: 600;
     color: #9B51E0;
-    text-align: center;
+    margin-bottom: 5px;
 }
 
 .roxo {
     color: #9B51E0;
-    text-align: center;
 }
 
 .ContainerIcones>.roxo:hover {
@@ -170,7 +181,14 @@ h2 {
     text-align: center;
 }
 
-/* sessão 3 */
+
+
+/* sessão 3- Variedades de canecas */
+
+#SessaoVariedades>h2, #SessaoVariedades>p{
+    margin-bottom: 40px;
+}
+
 #ceramica,
 #vidro,
 #metal,
@@ -204,10 +222,9 @@ h2 {
     font-size: 1.3rem;
 }
 
-.variedades>div {
+#SessaoVariedades>div {
     display: flex;
     align-items: center;
-
 }
 
 .observacoes>h3 {
@@ -219,7 +236,6 @@ h2 {
     width: 596px;
     height: 78px;
     font-size: 2rem;
-    text-align: center;
     margin-top: 30px;
     border-bottom: #9B51E0 1px solid;
 }
@@ -228,41 +244,38 @@ h2 {
     color: #FFC300;
 }
 
-.variedades>.botao {
+#SessaoVariedades>.botao {
     margin: 89px 0px 55px 0px;
 }
 
-.variedades>p {
+#SessaoVariedades>p {
     font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 40px;
 }
 
-/* Sessão 4 (Pode dar problema na hora do JavaScript) */
 
-.prazo {
+/* Sessão 4- Prazo de produção */
+#prazo {
     background-color: #ffc40020;
-
 }
 
-.prazo>article {
+#prazo>article {
     overflow: hidden;
-    
-    
 }
 
-.prazo>article>h2 {
+#prazo>article>h2 {
     text-align: center;
     margin-bottom: 50px;
 }
 
-.prazo>article>p {
+#prazo>article>p {
     text-align: center;
     width: 1011px;
     font-size: 1.5rem;
     margin: 50px 0px;
 }
 
+
+/* Sessão do carrosel */
 .containerCarrossel {
     display: flex;
     justify-content: flex-start;
@@ -275,12 +288,13 @@ h2 {
     /* Faz uma barrinha pra rolar lateral */
     /* overflow-x: auto;
     scroll-snap-type: x mandatory; */
-
 }
 
-
 #CardCeramica,
-#CardVidro, #CardMetal, #CardPersonalizado, #CardTematica {
+#CardVidro,
+#CardMetal,
+#CardPersonalizado,
+#CardTematica {
     background-color: #FEFEFE;
     width: 773px;
     height: 515px;
@@ -292,24 +306,22 @@ h2 {
 
     /* Faz uma barrinha pra rolar lateral */
     /* scroll-snap-align: start; */
-
 }
 
 #CardCeramica>img,
 #CardVidro>img,
 #CardMetal>img,
 #CardPersonalizado>img,
- #CardTematica {
+#CardTematica {
     width: 237px;
     margin-right: 45px;
-
 }
 
 #CardCeramica>div>h4,
 #CardVidro>div>h4,
 #CardMetal>div>h4,
 #CardPersonalizado>div>h4,
- #CardTematica>div>h4 {
+#CardTematica>div>h4 {
     font-size: 4rem;
     font-family: "Coiny", system-ui;
     font-weight: 400;
@@ -320,48 +332,54 @@ h2 {
 #CardVidro>div>p,
 #CardMetal>div>p,
 #CardPersonalizado>div>p,
- #CardTematica>div>p {
+#CardTematica>div>p {
     font-size: 2rem;
-
 }
 
 
 
-/* Sessão 5 */
-#sessaoPerguntas{
+/* Sessão 5- Perguntas frequentes */
+#sessaoPerguntas {
     border-bottom: #9B51E0 solid 1px;
 }
 
-.Perguntas>.botao{
+#Perguntas>.botao {
     margin-bottom: 40px;
 }
 
-.Perguntas{
-    display: flex;  
-    
+#Perguntas {
+    display: flex;
 }
-.Perguntas>h2, .Perguntas>.cardPerguntas>div, .Perguntas>p{
+
+#Perguntas>h2,
+#Perguntas>.cardPerguntas>div,
+#Perguntas>p {
     text-align: center;
 }
-.Perguntas>h2{
+
+#Perguntas>h2 {
     margin-bottom: 105px;
 }
-.Perguntas>p{
+
+#Perguntas>p {
     margin: 183px 0px 20px 0px;
     font-size: 2rem;
 }
-.cardPerguntas{
+
+
+.cardPerguntas {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
-.Perguntas>.cardPerguntas>div{
+
+#Perguntas>.cardPerguntas>div {
     border-bottom: #242424 1px solid;
     width: 800px;
     padding-bottom: 50px;
-
 }
-.Perguntas>.cardPerguntas>div>p{
+
+#Perguntas>.cardPerguntas>div>p {
     background-color: #56cbf220;
     font-size: 2rem;
     text-align: left;
@@ -369,28 +387,33 @@ h2 {
     padding: 10px;
 }
 
-/* Sessçao 6 */
-#cardGoogle>.alinhamento>p{
+
+
+/* Sessçao 6- Avaliações */
+#cardGoogle>.alinhamento>p {
     font-size: 1.5rem;
 }
-#cardGoogle>.alinhamento{
+
+#cardGoogle>.alinhamento {
     display: flex;
     gap: 10px;
 }
-#cardGoogle>.alinhamento>h3{
+
+#cardGoogle>.alinhamento>h3 {
     font-size: 2rem;
 }
-#avaliacoes{
+
+#avaliacoes {
     border-bottom: #242424 solid 1px;
 }
 
 /* Article */
-#cardGoogle{
+#cardGoogle {
     display: flex;
     margin: 97px 96px;
 }
 
-#carrosselAvaliacoes{
+#carrosselAvaliacoes {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -398,50 +421,49 @@ h2 {
 }
 
 /* Card de avaliações */
-.cardAvaliacoes{
+.cardAvaliacoes {
     background-color: #FEFEFE;
     width: 270px;
     height: 210.6px;
     padding: 14px 13px;
     border-radius: 10px;
-    box-shadow:0px 4px  4px #1a1a1a72;
+    box-shadow: 0px 4px 4px #1a1a1a72;
+
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
-   
+    align-items: flex-start;
 }
 
-.imagens{
+.imagens {
     display: flex;
     align-items: center;
-    justify-content: space-around;
- gap: 10px;
-
+    gap: 10px;
 }
 
-.Nome{
-font-size: 1rem;
+.Nome {
+    font-size: 1rem;
 }
 
-.Data{
-font-size: 0.8rem;
-color: #A7A7A7;
+.Data {
+    font-size: 0.8rem;
+    color: #A7A7A7;
 }
 
-.Estrelas{
-width: 108px;
+.Estrelas {
+    width: 108px;
 }
 
-.feedback{
+.feedback {
     display: flex;
     flex-direction: column;
 }
-.feedback>p{
+
+.feedback>p {
     font-size: 0.8rem
 }
 
 /* Botão */
-.passaLado{
+.passaLado {
     width: 30px;
     height: 30px;
     color: #A7A7A7;
@@ -450,4 +472,68 @@ width: 108px;
     font-size: 2rem;
 }
 
-/* Footer*/
+
+
+/* Sessão Footer*/
+
+#rodape {
+    margin-top: 20px;
+    background-color: #F4EDFB;
+}
+
+.informacoes {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.informacoes>div>h4 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.icones>p {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.icones {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#contato>div>div,
+.imagensPagamento {
+    margin: 20px 0px;
+}
+
+#contato,
+#pagamento {
+    width: 393px;
+}
+
+.imagensPagamento {
+    width: 206px;
+
+}
+
+.imagensPagamento>img {
+    margin-right: 10px;
+}
+
+#selos>h4 {
+    margin-bottom: 20px;
+}
+
+
+/* copyright */
+footer {
+    background-color: #242424;
+}
+
+#copyright {
+    text-align: center;
+    margin: 10px;
+    color: #FEFEFE;
+}
